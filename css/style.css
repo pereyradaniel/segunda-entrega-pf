@@ -3,7 +3,9 @@
   padding: 0;
   box-sizing: border-box;
   font-family: "Roboto", sans-serif;
-}
+  }
+
+  
 
 .header {
   margin: 0 auto;
@@ -179,9 +181,14 @@ div h2 {
   text-align: center;
   color: #023e8a;
 }
+div h3 {
+  font-size: 1.3em;
+  padding: 10px;
+  text-align: left;
+  color: #1fabc4;
+}
 
 div p {
-  text-align: center;
   max-width: 800px;
   margin: 0 auto;
 }
@@ -443,6 +450,7 @@ ion-icon {
     width: 90%;
     margin: 20px;
   }}
+
 @media (max-width: 860px){
   .cajaMapa {
     width: 90%;
@@ -451,17 +459,8 @@ ion-icon {
   .contactoMapa{
     width: 90%;
     padding:20px;
-      color: black;
-      }
-    
+     color: black;  
     text-decoration: underline;
     color: black;
     background-color: yellow;
-  }
-
-}
-
-@media (max-width: 860px){
-  
-
-}
+  }}
