@@ -1,0 +1,457 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+}
+
+.header {
+  margin: 0 auto;
+  padding: 0 10px;
+}
+
+.header img {
+  height: 5vh;
+}
+
+/* comienza css del logo y menu */
+.nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+}
+
+.nav ul {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+  list-style: none;
+}
+
+.nav li a {
+  text-decoration: none;
+  padding: 15px;
+}
+
+.nav li a:hover {
+  text-decoration: underline;
+  background-color: #1bb1dc;
+  color: white;
+}
+
+/* Comienza css intercambio de imagenes de la cabecera */
+.imagen1 {
+  width: 100%;
+  height: 450px;
+  max-height: 450px;
+  background-image: url(../img/fullsize/imagen11.jpg);
+  background-position: center center;
+  overflow: hidden;
+  transition-duration: 5s;
+  background-size: cover;
+}
+.imagen2 {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url(../img/fullsize/imagen_2.png);
+  overflow: hidden;
+  height: 450px;
+  max-height: 450px;
+  width: 50%;
+  transition-duration: 1s;
+  position: relative;
+}
+
+.imagen2:hover {
+  width: 98%;
+  transform: scale(1.05);
+}
+
+.imagen2:before {
+  content: "\2194";
+  color: rgb(255, 255, 255);
+  font-size: 25px;
+  position: absolute;
+  top: 0;
+  right: 0;
+  background-color: rgba(41, 22, 22, 0.788);
+  height: 100%;
+  line-height: 360px;
+  padding-right: 10px;
+  padding-left: 10px;
+}
+
+.imagen2 h1 {
+  color: #ffff;
+  text-align: right;
+  margin: 80px 80px 10px;
+  font-size: 45px;
+  font-weight: 500;
+}
+
+.imagen2 h2 {
+  color: #b6ccfe;
+  text-align: right;
+  margin: 0 80px;
+  font-weight: 400;
+}
+
+/* comienza css section nosotros */
+
+.gridNosotros {
+  display: grid;
+  align-items: center;
+  justify-items: center;
+  grid-template-columns: 50% 50%;
+  grid-template-rows: 1fr;
+  gap: 0px 0px;
+  grid-auto-flow: row;
+  margin: 50px 10px;
+  grid-template-areas: "gridNosotrosParrafo gridNosotrosVideo";
+}
+
+.gridNosotrosParrafo {
+  grid-area: gridNosotrosParrafo;
+  width: 90%;
+}
+
+.gridNosotrosVideo {
+  grid-area: gridNosotrosVideo;
+  margin: 0 auto;
+}
+
+.gridNosotrosVideo {
+  height: 0;
+  padding-bottom: 56.25%;
+  position: relative;
+}
+.gridNosotrosVideo iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+}
+.gridNosotrosVideoWrapper {
+  width: 80%;
+  margin: 0 auto;
+}
+
+.gridNosotrosParrafo h2 {
+  font-size: 32px;
+  text-align: center;
+  color: #023e8a;
+}
+.gridNosotrosParrafo h3 {
+  font-size: 17px;
+  text-align: justify;
+  margin: 10px;
+  line-height: 1;
+  color: #00b4d8;
+  font-weight: 700;
+}
+
+.gridNosotrosParrafo p {
+  font-size: 16px;
+  text-align: justify;
+  margin: 10px;
+  line-height: 1;
+}
+
+/* comienza css Servicios */
+
+.flexContenedorServicios {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+
+.servicios{
+  margin-top: 50px;
+}
+
+div h2 {
+  font-size: 30px;
+  padding: 10px;
+  text-align: center;
+  color: #023e8a;
+}
+
+div p {
+  text-align: center;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.serviciosHijo {
+  width: 350px;
+  margin: 20px;
+}
+
+ion-icon {
+  color: rgb(56, 59, 59);
+  margin: 5px 5px 5px;
+  font-size: 15px;
+}
+
+.iconoServicios1, .iconoServicios2, .iconoServicios3, .iconoServicios4, .iconoServicios5, .iconoServicios6{
+  padding-left:25px;
+  width: 100%;
+  font-size: 1em;
+  animation-name: caja1;
+  animation-timing-function: ease;
+}
+.iconoServicios1 {
+  background-color: rgb(212, 239, 248);
+  animation-duration: 0.5s;
+}
+
+.iconoServicios2 {
+  background-color: #fff0da;
+  animation-duration: 0.7s;
+}
+.iconoServicios3 {
+  background-color: #e6fdfc;
+  animation-duration: 0.9s;
+}
+
+.iconoServicios4 {
+  background-color: #eafde7;
+  animation-duration: 0.9s;
+}
+
+.iconoServicios5 {
+  background-color: #e1eeff;
+  animation-duration: 0.9s;
+}
+
+.iconoServicios6 {
+  background-color: #ecebff;
+  animation-duration: 0.9s;
+}
+
+/* ---------animación de caja servicios------------ */
+@keyframes caja1 {
+  0% {
+    margin-top: 100px;
+    opacity: 0;
+  }
+  100% {
+    margin-top: 0;
+    opacity: 1;
+  }
+}
+
+@keyframes caja2 {
+  0% {
+    margin-top: 100px;
+    opacity: 0;
+  }
+  100% {
+    margin-top: 0;
+    opacity: 1;
+  }
+}
+
+@keyframes caja3 {
+  0% {
+    margin-top: 100px;
+    opacity: 0;
+  }
+  100% {
+    margin-top: 0;
+    opacity: 1;
+  }
+}
+
+/* --------sección de como llegar---------- */
+
+.flexContenedorMapa {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  padding: 20px;
+  margin-top:30px;
+}
+
+.cajaMapa {
+  width: 50%;
+}
+.contactoMapa {
+  padding: 100px 0 0 100px;
+  color: black;
+
+}
+
+.contactoMapa li {
+  padding: 5px 0 5px 0;
+  font-size: 18px;
+  text-align: left;
+  list-style: none;
+  color: black;
+}
+.contactoMapa li a {
+  color: black;
+  padding: 0;
+}
+
+.contactoMapa p {
+  font-size: 23px;
+  color: black;
+}
+
+.tituloPrincipalOscuro {
+  font-size: 30px;
+  padding: 10px 0 10px 5px;
+  text-align: left;
+  color: #636060;
+}
+
+/* Formulario de contacto en bootstrap */
+
+.formulario{
+  margin: 60px 0;
+
+  background-color: rgb(247, 247, 247);
+}
+
+.btn-primary {
+  color: #fff;
+  background-color: #429edb;
+  border-color: #0d6efd;
+}
+.iconify {
+  margin-right: 10px;
+}
+
+.flexContenedorFooter {
+  display: flex;
+  flex-wrap: wrap;
+  align-content: center;
+  justify-content: center;
+  background: linear-gradient(rgba(5, 7, 12, 0.75), rgba(5, 7, 12, 0.75)),
+    url(/img/fullsize/footer-links.jpg) no-repeat center;
+  background-size: cover;
+}
+
+.cajaFooter1,
+.cajaFooter2{
+  width: 450px;
+  height: 250px;
+  padding: 17px;
+}
+
+.cajaFooter1,
+.cajaFooter2, lu{
+  list-style: none;
+}
+.cajaFooter1 li {
+  font-size: 18px;
+  list-style: none;
+  line-height: 1.8;
+  color: #ccc;
+}
+.cajaFooter1 li a {
+  line-height: 2;
+  font-size: 18px;
+  color: #ccc;
+}
+
+.cajaFooter2 li a {
+  line-height: 2;
+  font-size: 18px;
+  color: #ccc;
+  text-decoration: none;
+
+}
+
+.copyright {
+  background-color: rgb(29, 28, 28);
+  width: 100%;
+  height: 50px;
+  list-style: none;
+  display: inline-block;
+  text-align: center;
+  padding-top: 15px;
+}
+
+.copyright li a {
+  color: white;
+  font-size: 16px;
+  margin-right: 30px;
+  font-weight: 300;
+  text-decoration: none;
+}
+
+.copyright li {
+  display: inline-block;
+}
+
+/* Comienzo de media query */
+
+@media (max-width: 768px) {
+  .gridNosotros {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    grid-template-areas:
+      "gridNosotrosParrafo gridNosotrosParrafo"
+      "gridNosotrosVideo gridNosotrosVideo";
+  }
+
+  .gridNosotrosVideo {
+    grid-area: gridNosotrosVideo;
+    width: 100%;
+    margin: 0 auto;
+  }
+
+  .gridNosotrosParrafo {
+    grid-area: gridNosotrosParrafo;
+    margin-bottom: 10px;
+  }
+}
+
+@media (max-width: 768px) {
+  .copyright {
+    height: 150px;
+  }
+}
+
+@media (max-width: 768px) {
+  .imagen1 {
+    display: none;
+  }
+}
+
+@media (max-width: 860px){
+  .serviciosHijo {
+    width: 90%;
+    margin: 20px;
+  }}
+@media (max-width: 860px){
+  .cajaMapa {
+    width: 90%;
+     }
+
+  .contactoMapa{
+    width: 90%;
+    padding:20px;
+      color: black;
+      }
+    
+    text-decoration: underline;
+    color: black;
+    background-color: yellow;
+  }
+
+}
+
+@media (max-width: 860px){
+  
+
+}
