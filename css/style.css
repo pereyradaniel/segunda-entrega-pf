@@ -333,7 +333,7 @@ ion-icon {
   align-content: center;
   justify-content: center;
   background: linear-gradient(rgba(5, 7, 12, 0.75), rgba(5, 7, 12, 0.75)),
-    url(/img/fullsize/footer-links.jpg) no-repeat center;
+    url(./img/fullsize/footer-links.jpg) no-repeat center;
   background-size: cover;
 }
 
